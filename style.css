@@ -1,0 +1,29 @@
+html {
+    background-color: 	whitesmoke;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/*nav*/
+.navigation {
+    text-align: right;
+    padding: 50px;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline-flex;
+    font-size: 16px;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 300px) {
+    .navigation li {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+}
