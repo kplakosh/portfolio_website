@@ -1,17 +1,43 @@
 html {
     background-color: 	whitesmoke;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 100%;
 }
 
 body {
     margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: center;
+    width: 40%;
+    margin: 30px 30%;
+}
+
+/*header*/
+.fixed_bar {
+    height: 50px;
 }
 
 /*nav*/
 .navigation {
     text-align: right;
-    padding: 50px;
+    padding: 20px 20%;
     margin: 0;
 }
 
@@ -21,8 +47,31 @@ body {
     font-size: 0.8rem;
 }
 
+/*body*/
+.content {
+    text-align: center;
+}
+
+/*footer*/
+.footer_navigation {
+    text-align: center;
+    position: relative;
+    padding: 60px 20px;
+}
+
+.footer_navigation li {
+    display: inline-flex;
+    font-size: 16px;
+    font-size: 0.8rem;
+}
+
 @media (min-width: 300px) {
     .navigation li {
+        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .footer_navigation li {
         font-size: 16px;
         font-size: 1rem;
     }
