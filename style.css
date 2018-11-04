@@ -42,6 +42,7 @@ ul {
     left: 0;
     right: 0;
     width: 100%;
+    box-sizing: border-box;
     background-color: whitesmoke;
     text-align: right;
     padding: 20px;
