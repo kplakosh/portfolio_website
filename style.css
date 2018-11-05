@@ -18,12 +18,6 @@ footer {
     display: block;
 }
 
-p {
-    text-align: center;
-    width: 40%;
-    margin: 30px 30%;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -62,15 +56,32 @@ ul {
     text-align: center;
 }
 
+.section-title {
+    display: block;
+    background: darkgreen;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
 .greeting {
-    display: inline-flex;
-    flex-flow: row wrap;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .greeting h1 {
+    text-align: center;
     margin: 5px 5px;
     font-size: 32px;
     font-size: 2rem;
+}
+
+.about {
+    text-align: center;
+    width: 40%;
+    margin: 30px 30%;
 }
 
 /*footer*/
