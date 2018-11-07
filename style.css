@@ -57,13 +57,12 @@ footer {
 .greeting h1 {
     text-align: center;
     margin: 0;
+    padding: calc(100vh/2 - 40px);
     font-size: 32px;
     font-size: 2rem;
 }
 
 .content {
-    /* display: flex;
-    flex-flow: row wrap; */
     text-align: center;
     background-color: rgb(55, 55, 55);
     color: whitesmoke;
