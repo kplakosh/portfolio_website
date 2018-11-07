@@ -1,5 +1,6 @@
 html {
     background: rgb(100, 100, 100);
+    font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
 }
@@ -25,6 +26,10 @@ a {
 a:hover,
 a:active {
     color: gold;
+}
+
+p {
+    letter-spacing: 3px;
 }
 
 footer {
@@ -62,22 +67,23 @@ footer {
 .greeting h1 {
     text-align: center;
     margin: 0;
-    padding: calc(100vh/2 - 40px);
-    font-size: 32px;
-    font-size: 2rem;
+    padding: calc(100vh/2 - 200px);
+    font-family: "Dancing Script";
+    font-size: 62px;
+    font-size: 4rem;
 }
 
 .content {
     text-align: center;
     background-color: rgb(55, 55, 55);
     color: white;
-    height: 100vh;
+    height: 150vh;
 }
 
 .about {
     display: block;
     text-align: center;
-    width: 40%;
+    padding: 50px;
     margin: 0 30%;
 }
 
@@ -88,10 +94,31 @@ footer {
     padding: 60px 20px;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 800px) {
+
+    .greeting h1 {
+        padding: calc(100vh/2 - 200px); 
+        font-size: 32px;
+        font-size: 2rem;
+    }
+
+    .about {
+        text-align: center;
+        padding: 20px;
+        margin: 0 30%;
+    }
+}
+
+@media (min-width: 350px) {
     
     li {
         font-size: 16px;
         font-size: 1rem;
+    }
+
+    .greeting h1 {
+        padding: calc(100vh/2 - 200px); 
+        font-size: 48px;
+        font-size: 3rem;
     }
 }
