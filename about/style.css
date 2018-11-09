@@ -1,7 +1,6 @@
 .greeting h1 {
     text-align: center;
     margin: 0;
-    /* padding: calc(100vh/2 - 200px); */
     font-family: "Dancing Script";
     font-size: 62px;
     font-size: 4rem;

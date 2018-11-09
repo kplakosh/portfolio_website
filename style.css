@@ -1,6 +1,4 @@
 .greeting {
-    /* display: block; */
-    /* vertical-align: middle; */
     height: 100%;
     width: 100%;
 }
@@ -8,7 +6,6 @@
 .greeting h1 {
     text-align: center;
     margin: 0;
-    /* padding: calc(100vh/2 - 200px); */
     font-family: "Dancing Script";
     font-size: 62px;
     font-size: 4rem;
@@ -16,4 +13,11 @@
 
 .about {
     margin: 0 20px;
+}
+
+@media (min-width: 300px) {
+    .about {
+        margin: 0;
+        text-align: left;
+    }
 }
