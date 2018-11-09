@@ -40,6 +40,20 @@ footer {
     display: block;
 }
 
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
 /*nav*/
 .navigation {
     position: fixed;
@@ -53,6 +67,33 @@ footer {
     font-size: 0.8rem;
     z-index: 10;
 }
+.mobile-nav {
+  /* display: none; */
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
 
 /*body*/
 .section-title {
@@ -64,6 +105,7 @@ footer {
 
 .greeting {
     display: block;
+    vertical-align: middle;
     height: 100%;
     width: 100%;
 }
@@ -71,7 +113,7 @@ footer {
 .greeting h1 {
     text-align: center;
     margin: 0;
-    padding: calc(100vh/2 - 200px);
+    /* padding: calc(100vh/2 - 200px); */
     font-family: "Dancing Script";
     font-size: 62px;
     font-size: 4rem;
@@ -81,12 +123,11 @@ footer {
     text-align: center;
     background-color: rgb(55, 55, 55);
     color: white;
-    height: 150vh;
+    height: 100vh;
 }
 
 .about {
     padding: 10px;
-    /* margin: 0 30%; */
 }
 
 .skills {
@@ -106,6 +147,7 @@ footer {
 
     .greeting h1 {
         padding: calc(100vh/2 - 200px); 
+
         font-size: 32px;
         font-size: 2rem;
     }
