@@ -34,10 +34,22 @@ h1 {
 
 p {
     letter-spacing: 3px;
+    vertical-align: middle;
 }
 
 footer {
     display: block;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .toggle-button {
@@ -68,7 +80,7 @@ footer {
     z-index: 10;
 }
 .mobile-nav {
-  /* display: none; */
+  display: none;
   position: fixed;
   z-index: 101;
   top: 0;
@@ -120,10 +132,17 @@ footer {
 }
 
 .content {
-    text-align: center;
+    /* text-align: center; */
+    padding: 3.5rem;
+    /* vertical-align: middle; */
     background-color: rgb(55, 55, 55);
     color: white;
-    height: 100vh;
+    height: auto;
+}
+
+.beBoldText {
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .about {
