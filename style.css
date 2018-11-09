@@ -1,6 +1,6 @@
 .greeting {
-    display: block;
-    vertical-align: middle;
+    /* display: block; */
+    /* vertical-align: middle; */
     height: 100%;
     width: 100%;
 }
@@ -19,6 +19,3 @@
     font-weight: bold;
 }
 
-.about {
-    padding: 10px;
-}

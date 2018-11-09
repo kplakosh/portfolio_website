@@ -140,8 +140,15 @@ footer {
 .footer_navigation {
     background: rgb(32, 32, 32);
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
+}
 
+.follow-me__list {
+    background: none;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    text-align: right;
 }
 
 @media (max-width: 800px) {
