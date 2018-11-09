@@ -57,10 +57,10 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    background: transparent;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    z-index: 1;
+    /* background: transparent; */
+    /* padding: 0.5rem 1rem; */
+    /* display: inline-block; */
+    /* z-index: 1; */
 }
 
 .toggle-button {
@@ -72,17 +72,24 @@ footer {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
-  border: 2px solid red;
 }
 
 .toggle-button:focus {
   outline: none;
 }
 
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 /*nav*/
 .navigation {
     /* position: fixed; */
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     background-color: none;
     text-align: right;
