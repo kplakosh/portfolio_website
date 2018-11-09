@@ -52,14 +52,27 @@ footer {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    z-index: 1;
+}
+
 .toggle-button {
   width: 3rem;
+  height: 3rem;
   background: transparent;
-  border: none;
+  /* border: none; */
   cursor: pointer;
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
+  border: 2px solid red;
 }
 
 .toggle-button:focus {
@@ -68,7 +81,7 @@ footer {
 
 /*nav*/
 .navigation {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     box-sizing: border-box;
     background-color: none;
@@ -132,7 +145,7 @@ footer {
 }
 
 .content {
-    /* text-align: center; */
+    text-align: center;
     padding: 3.5rem;
     /* vertical-align: middle; */
     background-color: rgb(55, 55, 55);
@@ -160,6 +173,7 @@ footer {
     background: rgb(32, 32, 32);
     text-align: center;
     padding: 60px 20px;
+
 }
 
 @media (max-width: 800px) {
@@ -190,4 +204,8 @@ footer {
         font-size: 48px;
         font-size: 3rem;
     }
+}
+
+.open {
+    display: block !important;
 }
