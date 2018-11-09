@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html id="homepage">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
         <link rel="shortcut icon" href="imeges/shortcut_image.png">
-        <link rel="stylesheet" href="shared.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:300,700|Nunito:300,400|Shadows+Into+Light"
             rel="stylesheet">    
@@ -23,8 +22,8 @@
             </div>
             <nav class="navigation">
                 <ul>
-                    <li><a>Homepage</a></li>
-                    <li><a href="about/index.html">About</a></li>
+                    <li><a href="index.html#homepage">Homepage</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a>Contact</a></li>
                 </ul>
             </nav>
@@ -35,7 +34,7 @@
                     <a href="#">Homepage</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="about/index.html">About</a>
+                    <a href="index.html#about">About</a>
                 </li>
                 <li class="mobile-nav__item mobile-nav__item--cta">
                     <a href="#">Contact</a>
@@ -47,21 +46,41 @@
                 <h1>Hi, my name is Kateryna. <br>I'm software developer!</h1>
             </div>
         </section>
-        <section class="content">
+        <section class="content" id="about">
             <div class="about">
-                <p>A front-end developers role is to combine design and business logic to achieve a user-facing product. To do this
-                successfully, a wide skill set is necessary to produce a quality user experience
-                that leads to meeting business goals. With my experience I can:</p>
-                <p>Create responsive websites that work on a wide range of devices</p>
-                <p>Assist with production of clean and functional design</p>
-                <p>Bridge communication gap between designers and developers</p>
-                <p>Integrate your website into an easy to use content management system</p>
+                <section>
+                    <p>A front-end developers role is to combine design and business logic to achieve a user-facing product. To do this
+                    successfully, a wide skill set is necessary to produce a quality user experience
+                    that leads to meeting business goals. With my experience I can:</p>
+                    <p>Create responsive websites that work on a wide range of devices</p>
+                    <p>Assist with production of clean and functional design</p>
+                    <p>Bridge communication gap between designers and developers</p>
+                    <p>Integrate your website into an easy to use content management system</p>
+                </section>
+                <section class="skills">
+                    <h1>What I do</h1>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>Responsive development</p>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>Shell</p>
+                    <p>Docker</p>
+                </section>
+                <section class="skills">
+                    <h1>WILL have in nearest future:</h1>
+                    <p>Jave Script</p>
+                    <p>React</p>
+                    <p>APIs</p>
+                    <p>Mobile</p>
+                    <p>AWS</p>
+                </section>
             </div>
         </section>
         <footer class="footer_navigation">
             <ul>
                 <li><a href="index.html">Homepage</a></li>
-                <li><a href="about/index.html">About</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a>Contact</a></li>
             </ul>
             <section class="follow-me__list">
