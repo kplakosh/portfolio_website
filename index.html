@@ -11,8 +11,8 @@
  
     </head>
     <body>
-        <!-- <div class="backdrop"></div>
-        <header class="main-header">
+        <!-- <div class="backdrop"></div> -->
+        <!-- <header class="main-header">
             <div> 
                 <button class="toggle-button">
                     <span class="toggle-button__bar"></span>
@@ -28,6 +28,14 @@
                 </ul>
             </nav>
         </header> -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html#homepage">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="index.html#contact-form">CONTACT</a></li>
+            </ul>
+        </nav>
         <!-- <nav class="mobile-nav">
             <ul class="mobile-nav__items">
                 <li class="mobile-nav__item">
@@ -62,7 +70,7 @@
                 </section>
             </div>
 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <section class="section-container">
                     <div class="title-container">
                         <h1 class="title">Portfolio</h1>
@@ -84,17 +92,23 @@
                     <div class="title-container">
                         <h1 class="title">Skills</h1>
                     </div>
-                    <div class="skills-container left">
-                        <h3>What I do</h3>
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>Jave Script</p>
-                        <p>AWS</p>
-                        <p>Responsive development</p>
-                        <p>Git</p>
-                        <p>GitHub</p>
-                        <p>Shell</p>
-                        <p>Docker</p>
+                    <h3>What I do</h3>
+                    <div class="skills-container">
+                        <div>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Jave Script</p>
+                        </div>
+                        <div>
+                            <p>AWS</p>
+                            <p>Responsive development</p>
+                            <p>Git</p>
+                        </div>
+                        <div>
+                            <p>GitHub</p>
+                            <p>Shell</p>
+                            <p>Docker</p>
+                        </div>
                     </div>
                     <div class="skills-container right">
                         <h3>WILL have in nearest future:</h3>
@@ -111,9 +125,11 @@
                     <p class="title">Thanks!</p>
                 </div>
                 <p>Want to chat about something?</p>
-                <p><img src="" alt="">CONTACT ME</p>
+                <p class="button-box" id="contact-form">
+                    <img src="" alt="">
+                    CONTACT ME
+                </p>
                 <section class="follow-me__list">
-                    <h3>Follow me</h3>
                     <p><a href="https://github.com/kplakosh">GitHub</a></p>
                     <p><a href="https://www.linkedin.com/in/kplakosh/">LikedIn</a></p>
                     <p><a>Facebook</a></p>

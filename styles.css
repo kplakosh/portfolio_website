@@ -6,6 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 li {
@@ -20,8 +21,39 @@ a {
     color: goldenrod;
 }
 
-/* Greeting section */
+/* Navigation */
+.navigation {
+    position: fixed;
+    align-items: center;
+    justify-content: middle;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
 
+.navigation ul{
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.navigation li {
+    line-height: 40px;
+    padding: 5px;
+}
+
+.navigation a {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Greeting section */
 .section-title {
     margin: 0;
     width: 100%;
@@ -29,6 +61,7 @@ a {
     background-image: url(./imeges/cup_of_tea.jpg); 
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .greeting h1 {
@@ -40,7 +73,20 @@ a {
     padding: 2rem;
 }
 
-/* About Kateryna section */
+/* Sections style */
+.section-container {
+    padding: 60px 0;
+    margin: auto;
+    text-align: center;
+}
+
+/* Titles style */
+.title-container {
+    position: relative;
+    z-index: 0;
+}
+
+/* Webpage content style */
 
 .content {
     background-color: rgb(55, 55, 55);
@@ -48,22 +94,10 @@ a {
     height: auto;
 }
 
+/* About section */
+
 .about {
     color: white;
-}
-
-.section-container {
-    padding: 60px 30px;
-    width: 1024px;
-    margin: auto;
-    text-align: center;
-}
-
-
-.title {
-    font-size: 48px;
-    text-align: center;
-    margin: 0;
 }
 
 /* Portfolio */
@@ -73,49 +107,78 @@ a {
     width: 100%;
 }
 
-.title-container {
-    position: relative;
-}
-
-.title {
-    display: inline-block;
-    width: 100%;
-}
-
-.title::before {
-    position: absolute;
-    top: 50%;
-    display: block;
-    left: 0;
-    width: 30%;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.25);
-    content: "";
-}
-
-.title::after {
-    position: absolute;
-    top: 50%;
-    display: block;
-    right: 0;
-    width: 30%;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.25);
-    content: "";
-}
-
 .screenshot {
-    width: 600px;
+    width: 300px;
 }
 
 /* Skills */
-
 .skills {
     background-color: #2e2e2e;
 }
 
-.left {
-    text-align: left;
-}
+@media (min-width: 1024px) {
+    .navigation {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-.right {
-    text-align: right;
+    .navigation ul{
+        width: 1024px;
+        display: block;
+        text-align: right;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .section-container {
+        padding: 60px 0;
+        width: 1024px;
+        margin: auto;
+    }
+
+    /* Title style */
+    .title {
+        position: relative;
+        width: calc(100% - 20px);
+        display: inline-block;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .title::before {
+        position: absolute;
+        top: 50%;
+        display: block;
+        left: 0;
+        width: 30%;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+        content: "";
+    }
+
+    .title::after {
+        position: absolute;
+        top: 50%;
+        display: block;
+        right: 0;
+        width: 30%;
+        border-bottom: 5px solid rgba(0, 0, 0, 0.25);
+        content: "";
+    }
+
+    /* Portfolio */
+    .screenshot {
+        width: 600px;
+    }
+
+    /* Skills */
+    .skills {
+        width: 100%;
+    }
+
+    .skills-container {
+        justify-content: space-between;
+        display: flex;
+        flex-flow: row;
+    }
 }
