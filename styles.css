@@ -10,10 +10,8 @@ body {
 }
 
 li {
-    display: inline-block;
-    background-color: none; 
-    font-size: 16px;
-    font-size: 0.8rem;
+    /* display: inline-block; */
+    background-color: none;   
 }
 
 a {
@@ -61,16 +59,6 @@ a {
     vertical-align: middle;
 }
 
-/* .navigation {
-    position: inline-block;
-    text-align: right;
-    width: calc(100% - 100px);
-} */
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .mobile-nav {
   display: none;
   position: fixed;
@@ -113,7 +101,6 @@ a {
 /* Navigation */
 .navigation {
     position: fixed;
-    /* display: inline-block; */
     display: none;
     align-items: center;
     justify-content: middle;
@@ -176,9 +163,27 @@ a {
 
 /* Sections style */
 .section-container {
-    padding: 60px 10px;
+    padding: 20px 10px;
     margin: auto;
-    text-align: center;
+}
+
+.section-container hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    border-top: 5px solid rgba(255, 255, 255, 0.75);
+    width: 70%;
+}
+
+.centralized {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Titles style */
@@ -234,15 +239,29 @@ a {
     display: flex;
     flex-flow: column;
     background-color: #374a42;
+    text-align: justify;
 }
 
 .project-description {
     display: flex;
     flex-flow: column;
-
 }
 
-.screenshot {
+.project-description h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.game-rules {
+    margin: 0;
+    padding: 0;
+}
+
+.game-rules li {
+    list-style-position: inside;
+}
+
+.project-img {
     width: 300px;
     margin: 20px auto;
 }
@@ -270,6 +289,7 @@ a {
     display: flex;
     flex-flow: wrap;
     margin-top: 30px;
+    text-align: center;
 }
 
 .skills-block {
@@ -285,12 +305,14 @@ a {
     margin: 20px auto;
     padding: 10px;
     background-color: #525252;
+    text-align: center;
 }
 
 /* Footer */
 .footer-navigation {
     position: relative;
     background-color: #dcdedd;
+    text-align: center;
 }
 
 .c-btn {
@@ -351,6 +373,8 @@ a {
     font-size: 16px;
 }
 
+
+
 @media (min-width: 1025px) {
 
     .toggle-button {
@@ -370,6 +394,10 @@ a {
         padding: 0;
         margin: 0 auto;
     }
+    
+    .navigation li {
+        display: inline-block;
+    }
 
     .greeting {
         width: 400px;
@@ -384,7 +412,7 @@ a {
     .section-container {
         display: flex;
         flex-flow: column;
-        padding: 60px 10px;
+        padding: 100px 10px;
         width: 1024px;
         margin: auto;
     }
@@ -392,7 +420,7 @@ a {
     /* Title style */
     .title {
         position: relative;
-        width: calc(100% - 20px);
+        width: 100%;
         display: inline-block;
         font-size: 48px;
         text-align: center;
@@ -408,12 +436,17 @@ a {
     }
 
     /* Portfolio */
-    .screenshot {
+    .project-description h2 {
+        margin: 20px;
+    }
+
+    .project-img {
         width: 600px;
     }
 
     .button {
         width: 200px;
+
     }
 
     /* Skills */

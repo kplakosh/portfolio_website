@@ -22,7 +22,7 @@ To view the website <a href="http://kplakosh.com/">click here.</a>
 
 The page looks like this:
 
-![alt text](./images/Home-Screen.jpg)
+![alt text](./images/README/Home-Screen.jpg)
 
 ## About section:
 
