@@ -24,9 +24,9 @@ The page looks like this:
 
 ![alt text](./images/Home-Screen.jpg)
 
-![alt text](./images/About-Portfolio.jpg)
+![alt text](./images/About-Portfolio.png)
 
-![alt text](./images/Skills-Footer.jpg)
+![alt text](./images/Skills-Footer.png)
 
 
 ## About section:
