@@ -28,11 +28,12 @@ a {
     justify-content: middle;
     height: 50px;
     width: 100%;
+    top: 0;
     margin: 0 auto;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.55);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 2;
 }
 
 .navigation ul{
@@ -55,23 +56,32 @@ a {
 }
 
 /* Greeting section */
+
 .section-title {
+    position: fixed;
     margin: 0;
+    /* padding-bottom: 700px; */
     width: 100%;
     height: 700px;
+    top: 0;
     background-image: url(./imeges/cup-of-tea.jpg); 
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
 }
 
-.greeting h1 {
-    text-align: center;
-    margin: 0;
-    padding-top: 320px !important;
+.greeting {
+    height: 100%;
+    width: 420px;
+    margin: 0 auto;
+}
+
+#greeting-line {
+    padding-top: 360px;
     font-family: 'Dancing Script', cursive;
     font-size: 2.7rem;
-    padding: 2rem;
+    text-align: center;
+    width: 420px;
+    margin: 0;
 }
 
 /* Sections style */
@@ -84,7 +94,6 @@ a {
 /* Titles style */
 .title-container {
     position: relative;
-    z-index: 0;
 }
 
 .title {
@@ -117,15 +126,21 @@ a {
 }
 
 /* Webpage content style */
-.content {
+.page-content {
+    position: relative;
     background-color: rgb(55, 55, 55);
     color: white;
     height: auto;
+    margin-top: 700px;
 }
 
 /* About section */
 .about {
     color: white;
+}
+
+.text-content {
+    text-align: justify;
 }
 
 /* Portfolio */
@@ -182,6 +197,11 @@ a {
 }
 
 /* Footer */
+.footer-navigation {
+    position: relative;
+    background-color: #dcdedd;
+}
+
 .c-btn {
     display: flex;
     flex-flow: row;
@@ -238,20 +258,21 @@ a {
 }
 
 .made {
-    font-size: 12px;
+    font-size: 18px;
 
 }
 
 @media (min-width: 1024px) {
-    .greeting h1 {
+    /* .greeting h1 {
         padding-top: 455px !important;
-    }
+    } */
     .navigation {
         width: 100%;
         margin: 0 auto;
     }
 
     .navigation ul{
+        width: 1024px;
         display: block;
         text-align: right;
         padding: 0;
