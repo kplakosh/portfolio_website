@@ -21,9 +21,100 @@ a {
     color: goldenrod;
 }
 
+/* Mobile navigation */
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    z-index: 4000;
+}
+
+.toggle-button {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .navigation {
+    position: inline-block;
+    text-align: right;
+    width: calc(100% - 100px);
+} */
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: whitesmoke;
+  width: 80%;
+  height: 100vh;
+  z-index: 3001;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 /* Navigation */
 .navigation {
     position: fixed;
+    /* display: inline-block; */
+    display: none;
     align-items: center;
     justify-content: middle;
     height: 50px;
@@ -261,8 +352,13 @@ a {
 }
 
 @media (min-width: 1025px) {
+
+    .toggle-button {
+        display: none;
+    }
     
     .navigation {
+        display: block;
         width: 100vw;
         margin: 0 auto;
     }
