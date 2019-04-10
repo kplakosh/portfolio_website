@@ -27,9 +27,9 @@ a {
     align-items: center;
     justify-content: middle;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.55);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -37,11 +37,12 @@ a {
 }
 
 .navigation ul{
+    position: relative;
     width: 100%;
     display: block;
     text-align: right;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .navigation li {
@@ -56,12 +57,10 @@ a {
 }
 
 /* Greeting section */
-
 .section-title {
     position: fixed;
     margin: 0;
-    /* padding-bottom: 700px; */
-    width: 100%;
+    width: 100vw;
     height: 700px;
     top: 0;
     background-image: url(./imeges/cup-of-tea.jpg); 
@@ -71,16 +70,17 @@ a {
 
 .greeting {
     height: 100%;
-    width: 420px;
+    width: 300px;
     margin: 0 auto;
 }
 
 #greeting-line {
     padding-top: 360px;
     font-family: 'Dancing Script', cursive;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
-    width: 340px;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Sections style */
@@ -143,16 +143,16 @@ a {
     display: flex;
     flex-flow: column;
     background-color: #374a42;
-    width: 100%;
 }
 
 .project-description {
     display: flex;
     flex-flow: column;
+
 }
 
 .screenshot {
-    width: 320px;
+    width: 300px;
     margin: 20px auto;
 }
 
@@ -208,7 +208,6 @@ a {
     width: 160px !important;
     align-items: center;
     margin: 0 auto;
-    
 }
 
 .contact-me {
@@ -258,16 +257,13 @@ a {
 }
 
 .made {
-    font-size: 18px;
-
+    font-size: 16px;
 }
 
-@media (min-width: 1024px) {
-    /* .greeting h1 {
-        padding-top: 455px !important;
-    } */
+@media (min-width: 1025px) {
+    
     .navigation {
-        width: 100%;
+        width: 100vw;
         margin: 0 auto;
     }
 
@@ -277,6 +273,16 @@ a {
         text-align: right;
         padding: 0;
         margin: 0 auto;
+    }
+
+    .greeting {
+        width: 400px;
+    }
+
+    #greeting-line {
+        font-size: 2.5rem;
+        padding-top: 330px;
+        width: 100%;
     }
 
     .section-container {
@@ -332,6 +338,10 @@ a {
         justify-content: space-between;
         display: flex;
         flex-flow: row;
+    }
+
+    .made {
+        font-size: 18px;
     }
 
 }
