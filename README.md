@@ -24,11 +24,6 @@ The page looks like this:
 
 ![alt text](./images/Home-Screen.jpg)
 
-![alt text](./images/About-Portfolio.png)
-
-![alt text](./images/Skills-Footer.png)
-
-
 ## About section:
 
 - The about section contains a quick about blurb.
