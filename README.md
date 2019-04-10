@@ -1,11 +1,11 @@
-# Portfolio website
+# Personal website
 
 
 ## Introduction
 
-This repository contains source code for my web developer portfolio page. It is created with HTML5 and CSS3. Used google font for this page. Page is hosted using AWS.
+This repository contains source code of my web developer portfolio website. It is created using HTML5, CSS3, JavaScript and Google Font. The website is hosted on AWS.
 
-To view site <a href="http://kplakosh.com/">click here.</a>
+To view the website <a href="http://kplakosh.com/">click here.</a>
 
 
 ## Features
@@ -26,9 +26,8 @@ The page looks like this:
 
 ## About section:
 
-- The about section contains a quick about blurb.
+- The about section contains a quick blurb.
 - Also contains short story about me.
-
 
 ## Project section:
 
@@ -40,7 +39,7 @@ The page looks like this:
 ## Skills section:
 
 - This section contains the current skill set.
-- This section will be updated as any skills are added.
+- This section will be updated as any skills are gained.
 
 ## Footer: 
 
@@ -48,5 +47,3 @@ The page looks like this:
 - Have questions? Contact me button will lead to contact me form.
 - Contact me button will open the backdrop with form.
 - Social links leading to GitHub, LinkedIn, and Instagram.
-
-**Please do not add any improvements to this project.**

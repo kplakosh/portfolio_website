@@ -63,7 +63,7 @@ a {
     width: 100vw;
     height: 700px;
     top: 0;
-    background-image: url(./imeges/cup-of-tea.jpg); 
+    background-image: url(./images/cup-of-tea.jpg); 
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -220,7 +220,7 @@ a {
 .mail {
     width: 25px;
     height: 25px;
-    background-image: url(./imeges/social-icons.png);
+    background-image: url(./images/social-icons.png);
     background-size: 342px 222px;
     background-position: -197px -42px;
     border-radius: 50%;
@@ -239,7 +239,7 @@ a {
 .github, .linkedin, .instagram {
     width: 40px;
     height: 40px;
-    background-image: url(./imeges/social-icons.png);
+    background-image: url(./images/social-icons.png);
     background-size: 525px 353px;
     border-radius: 50%;
 }
