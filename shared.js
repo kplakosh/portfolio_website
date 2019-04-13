@@ -5,9 +5,11 @@ var toggleButton = document.querySelector('.toggle-button');
 backdrop.addEventListener('click', function() {
     mobileNav.classList.remove('open');
     closeBackdrop();
+    toggleButton.style.display = "block";
 });
 
 toggleButton.addEventListener("click", function () {
+    toggleButton.style.display = "none";
     mobileNav.classList.add("open");
     backdrop.style.display = "block";
     setTimeout(() => {
