@@ -345,17 +345,25 @@ a {
     align-items: center; 
 }
 
-.mail-img {
-    width: 26px;
-    height: 26px;
-    background-image: url(./images/social-icons.png);
-    background-size: 343px 225px;
-    background-position: -197px -42px;
-    border-radius: 50%;
-    margin: 0;
+.contact-me:hover .email, .contact-me:hover svg {
+    color: white;
+    fill: white;
 }
 
-.follow-me{
+.email {
+    padding-left: 10px;
+    color:  rgb(55, 55, 55);
+}
+
+svg {
+    fill:  rgb(55, 55, 55);
+}
+
+svg:hover {
+    fill:  white;
+}
+
+.follow-me {
     display: flex;
     flex-flow: row;
     width: 180px;
@@ -367,21 +375,7 @@ a {
 .github, .linkedin, .instagram {
     width: 40px;
     height: 40px;
-    background-image: url(./images/social-icons.png);
-    background-size: 525px 353px;
     border-radius: 50%;
-}
-
-.github {
-    background-position: -242px -125px;
-}
-
-.linkedin {
-    background-position: -6px -185px;
-}
-
-.instagram {
-    background-position: -418px -125px;
 }
 
 .made {
