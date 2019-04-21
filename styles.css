@@ -338,14 +338,14 @@ a {
     text-align: justify
 }
 
-.contact-me {
+.contact {
     display: flex;
     flex-flow: row;
     margin: 0 auto;
     align-items: center; 
 }
 
-.contact-me:hover .email, .contact-me:hover svg {
+.contact:hover .email, .contact:hover svg {
     color: white;
     fill: white;
 }
